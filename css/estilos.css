@@ -1,0 +1,29 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    overflow: hidden;
+}
+
+#menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+
+}
+
+#menu button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.carousel-inner {
+    max-height: 39rem;
+}
+.d-item{
+    height: 100px;
+}
+.d-img{
+    height: 6%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
