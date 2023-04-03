@@ -1,13 +1,19 @@
 body{
-    font-family: 'Montserrat',sans-serif;
-    overflow: hidden;
+    background: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+
 }
 
+
 #menu a {
+    padding: 25px 25px;
     font-size: 18px;
     font-weight: bold;
-    color: blue;
 
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgba(0, 204, 255, 0.856);
+    transition: all 1.s ease-in-out;
 }
 
 #menu button{
@@ -20,10 +26,35 @@ body{
     max-height: 39rem;
 }
 .d-item{
-    height: 100px;
+    height: 550px;
 }
-.d-img{
-    height: 6%;
-    object-fit: cover;
-    filter: brightness(0.6);
+.card-img-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 180px;
+
 }
+.container-2{
+    margin: 25px;
+    display: flex;
+    justify-content: center ;
+    border-color: aliceblue;
+}
+.container-2 .img{
+    height: 550px;
+    width:  550px;
+}
+.container-2 .text{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
