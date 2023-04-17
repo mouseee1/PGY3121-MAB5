@@ -171,12 +171,19 @@
   
   <div class="px-lg-5  py-lg-4  p-4 w-100 aling-self-center">
     <h1 class="font-weigth-bold mb-4 text-light">Bienvenido</h1>
-    <form class="mb-5">
+    <!-- <form class="mb-5">
     <div class="mb-4">
       <label for="exampleInputEmail1" class="form-label font-weigth-bold text-light">Email address</label>
       <input type="email" class="form-control bg-dark-x border-0 mb-2" id="exampleInputEmail1" placeholder="Ingrese su email" aria-describedby="emailHelp">
-    </div>
-
+    </div> -->
+    <form class="mb-5 needs-validation">
+      <div class="mb-4 has-validation">
+        <label  for="validationCustomUsername"  for="exampleInputEmail1" class="form-label font-weigth-bold text-light">Email address</label>
+        <input type="email" class="form-control bg-dark-x border-0 mb-2"  id="validationCustomUsername" required="" placeholder="Ingrese su email" aria-describedby="emailHelp">
+        <div class="invalid-feedback">
+          Por favor, elije un nombre de usuario.
+        </div>
+      </div>
 
     <div class="mb-4">
       <label for="exampleInputPassword1" class="form-label font-weigth-bold text-light">Password</label>
@@ -192,7 +199,7 @@
       <button type="submit" class="btn btn-outline-light flex-grow-1  ml-2"><i class="fa-brands fa-facebook  mr-2"></i>Facebook</button>
     </div>
     <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 w-100 mt-auto">
-      <p class="d-incline-block mb-0 font-weigth-bold">¿Todavia no tienes una cuenta?</p><a href="" class="text-light font-weigth-bold
+      <p class="d-incline-block mb-0 font-weigth-bold">¿Todavia no tienes una cuenta?</p><a href="registro.html" class="text-light font-weigth-bold
         text-decoration-none">crea una ahora</a>
     </div>
   
