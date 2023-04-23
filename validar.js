@@ -53,14 +53,14 @@ function validarform()
     else if (nombre == "") 
     { 
         document.getElementById("txtnombre").focus();
-        document.getElementById("txtnombre").style.borderColor="red";
+        document.getElementById("txtnombre").style.borderColor="";
         datosCorrectos=false;
         error="\n Llene el campo nombre";
     }
     else if (nombre.length < 10) 
     {
         document.getElementById("txtnombre").focus();
-        document.getElementById("txtnombre").style.borderColor="red";
+        document.getElementById("txtnombre").style.borderColor="";
         datosCorrectos=false;
         error="\n El campo nombre debe de tener mas de 10 caracteres";
     }
