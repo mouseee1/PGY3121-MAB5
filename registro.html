@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a8d5eeb527.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="validar.js">
 
 </head>
 <body>
@@ -95,10 +96,14 @@
         </div> -->
         <form class="mb-5 needs-validation" novalidate>
           <div class="mb-4 has-validation" >
-            <label  for="rut" class="form-label font-weigth-bold text-light  ">Rut</label>
+            <label  for="rut" class="form-label font-weigth-bold text-light">Rut</label>
             <input type="text" class="form-control bg-dark-x border-0 mb-2 " id="rut" required="" placeholder="Ingrese su rut" aria-describedby="textHelp">
+            <div class="valid-feedback">
+              todo bien.
+            </div>
             <div class="invalid-feedback">
               Ingrese su rut sin puntos.
+            </div>
             </div>
 
 
@@ -106,7 +111,10 @@
 
             <div class="mb-4">
             <label  for="nombre" class="form-label font-weigth-bold text-light">Nombre</label>
-            <input type="nombre" class="form-control bg-dark-x border-0 mb-2"  id="nombre" required="" placeholder="Ingrese su nombre" aria-describedby="textHelp">
+            <input type="txt" class="form-control bg-dark-x border-0 mb-2"  id="nombre" required="" placeholder="Ingrese su nombre" aria-describedby="textHelp">
+            <div class="valid-feedback">
+              todo bien.
+            </div>
             <div class="invalid-feedback">
               Por favor, No debe contener puntos ni simbolos.
             </div>
@@ -115,8 +123,11 @@
 
 
             <div class="mb-4">
-            <label  for="validationCustomUsername" class="form-label font-weigth-bold text-light">Apellido</label>
-            <input type="email" class="form-control bg-dark-x border-0 mb-2 "  id="validationCustomUsername" required="" placeholder="Ingrese su email" aria-describedby="emailHelp">
+            <label  for="apellido" class="form-label font-weigth-bold text-light">Apellido</label>
+            <input type="txt" class="form-control bg-dark-x border-0 mb-2 "  id="apellido" required="" placeholder="Ingrese su apellido" aria-describedby="textHelp">
+            <div class="valid-feedback">
+              todo bien.
+            </div>
             <div class="invalid-feedback">
               Por favor, No debe contener puntos ni simbolos.
             </div>
@@ -124,44 +135,53 @@
             
 
             <div class="mb-4">
-            <label  for="validationCustomUsername" class="form-label font-weigth-bold text-light">Email adrees</label>
-            <input type="email" class="form-control bg-dark-x border-0 mb-2 "  id="validationCustomUsername" required="" placeholder="Ingrese su email" aria-describedby="emailHelp">
-            <div class="invalid-feedback">
-              Por favor, complete el campo.
-            </div>
+              <label  for="email"  for="exampleInputEmail1" class="form-label font-weigth-bold text-light">Email address</label>
+              <input type="email" class="form-control bg-dark-xx border-0 mb-2"  id="email" required="" placeholder="grovervas@email.com" aria-describedby="emailHelp">
+              <div class="valid-feedback">
+                todo bien
+              </div>
+              <div class="invalid-feedback">
+                Por favor, elije un nombre de usuario.
+              </div>
           </div>
 
 
         <div class="mb-4">
-          <label for="exampleInputPassword1" class="form-label font-weigth-bold text-light">contraseña</label>
-          <input type="password" class="form-control bg-dark-x border-0 mb-2" id="exampleInputPassword1" placeholder="contraseña" required>
-          <div class="invalid-feedback">
-            La contraseña debe tener mas de 8 caracteres<br>
-            -debe incluir una letra en masyuscula  <br>
-            -debe incluir un simobolo '@'     <br>
+          <label for="password" class="form-label font-weigth-bold text-light">contraseña</label>
+          <input type="password" class="form-control bg-dark-x border-0 mb-2" id="password" placeholder="contraseña" required>
+          <div class="valid-feedback">
+            todo bien
 
           </div>
-        </div>
-
-
-        <div class="mb-4">
-          <label for="exampleInputPassword2" class="form-label font-weigth-bold text-light">Repita contraseña</label>
-          <input type="password" class="form-control bg-dark-x border-0 mb-2" id="exampleInputPassword2" placeholder="Ingrese su contraseña" required>
           <div class="invalid-feedback">
-            Las contraseñas deben coincidir.
-          </div>
-          <div class="invalid-feedback">
-            La contraseña debe tener mas de 8 caracteres<br>
+            La contraseña tiene que ser de 4 a 12 dígitos.<br>
             -debe incluir una letra en masyuscula  <br>
             -debe incluir un simobolo '@'     <br>
           </div>
         </div>
 
 
+        <div class="mb-4">
+          <label for="password2" class="form-label font-weigth-bold text-light">Repita contraseña</label>
+          <input type="password" class="form-control bg-dark-x border-0 mb-2" id="password2" placeholder="Ingrese su contraseña" required>
+          <div class="valid-feedback">
+            todo bien
+          </div>
+          <div class="invalid-feedback">
+            La contraseña tiene que ser de 4 a 12 dígitos.<br>
+            -debe incluir una letra en masyuscula  <br>
+            -debe incluir un simobolo '@'     <br>
+          </div>
+        </div>
+
+
 
         <div class="mb-4">
-          <label for="exampleInputPassword2" class="form-label font-weigth-bold text-light">Direccion</label>
-          <input type="password" class="form-control bg-dark-x border-0 mb-2" id="exampleInputPassword2" placeholder="Ingrese su contraseña" required>
+          <label for="direccion" class="form-label font-weigth-bold text-light">Direccion</label>
+          <input type="txt" class="form-control bg-dark-x border-0 mb-2" id="direccion" placeholder="Ingrese su direccion" required>
+          <div class="valid-feedback">
+            todo bien.
+          </div>
           <div class="invalid-feedback">
             Por favor, Ingrese una Direccion.
           </div>
@@ -174,11 +194,11 @@
     </section>
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-          'use strict'
+    (function () {
+    'use strict'
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              var forms = document.querySelectorAll('.needs-validation')
+  var forms = document.querySelectorAll('.needs-validation')
 
   // Loop over them and prevent submission
   Array.prototype.slice.call(forms)
@@ -193,6 +213,7 @@
       }, false)
     })
 })()
+
         </script>
        
     
