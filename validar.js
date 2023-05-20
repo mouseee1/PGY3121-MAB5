@@ -2,13 +2,13 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	rut :  /^([0-9])+-([kK0-9])+$/,
+	rut :  /^([0-9])+-([kK0-9])+$/, //numeros sin puntos mas (-k)
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	direccion: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-	telefono: /^\d{1,3}$/ // 1 a 9 numeros.
+	direccion: /^[a-zA-Z0-9\s\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+	telefono:/^\d{1,9}$/ // 1 a 9 numeros.
 }
 
 const campos = {
@@ -17,7 +17,7 @@ const campos = {
 	nombre: false,
 	password: false,
 	correo: false,
-	telefono : false,
+	direccion : false,
 	telefono: false
 }
 

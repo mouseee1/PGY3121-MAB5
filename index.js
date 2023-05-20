@@ -1,25 +1,51 @@
-const API_URL = 'https://jsonplaceholder.typicode.com/users';
-const HTMLResponse = document.querySelector("#app");
-const ul = document.createElement("ul");
-
-
-fetch(`${API_URL}/users`)
-    .then((response) => response.json())
-    .then((users) => {
-        users.array.forEach(element => {
-            
-        });((user) =>{
-        let elem = document.createElement("li");
-        elem.appendChild(
-            document.createTextNode(`${user.name} ✉ ${user.email}`));
-        ul.appendChild(elem);
-    
+$(document).ready(function(){
+    $("#correo").blur(function(){
+        var settings = {
+            "url": "https://api.hunter.io/v2/email-finder?domain=duocuc.cl&first_name=Alexis&last_name=Ohanian&api_key=e1a6a2b54bb8423ded29ae41931f22eeccdddd9d",
+            "method": "GET",
+            "timeout": 0,
+            "headers": {
+              "Cookie": "connect.sid=s%3AysQxoLChy00Hyu092OEM_3VMe9Trwe1Z.wTzAGroElDlsqMwysfovAmhfePZO6eJlZAfVKf06Z3o"
+            },
+          };
+          
+        $.ajax(settings).done(function (data){
+            if(data.status == true){
+                alert("Correo Correcto");
+            }
+            else{
+                alert("Correo Incorrecto");
+            }
+        });
     });
+});
 
-        HTMLResponse.appendChild(ul);
 
 
-    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
-        
